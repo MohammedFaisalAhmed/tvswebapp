@@ -34,9 +34,14 @@ public class JsonUtil
 		}
 		
 		
-	}
-
 	return null;
 
-
+	}
+	
+	
+	public static JsonNode getuserDataByUsername(String userName )
+	{
+		
+		return getDataFromJson("src/main/resources/testdata/json/logindata.json", "Users", "UserName", userName);
+	}
 }

@@ -1,0 +1,37 @@
+{
+	
+        "Users":[
+		
+		{
+			
+			"UserName": "TestUser1",
+			"MobileNumber": "7777654678",
+			"OTP": "111411"
+			
+			
+			
+		},
+		
+		
+		{
+			"UserName": "TestUser2",
+		    "MobileNumber": "8700006578",
+			"OTP": "112111"
+			
+			
+		}
+		
+		
+		
+		
+	]
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}

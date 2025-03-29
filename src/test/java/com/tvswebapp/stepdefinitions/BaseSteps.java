@@ -16,7 +16,7 @@ public class BaseSteps
 	public BaseSteps()
 	{
 
-		String browser =ConfigUtil.getProperty("browser");
+		String browser =ConfigUtil.getBrowser();
 		this.driver= DriverFactoryUtil.getDriver(browser);
 		initializePages();
 

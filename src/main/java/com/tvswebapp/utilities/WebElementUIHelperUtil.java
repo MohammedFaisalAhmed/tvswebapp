@@ -8,6 +8,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
+import com.aventstack.extentreports.Status;
+
 public class WebElementUIHelperUtil 
 {
 	public WebDriver driver;
@@ -43,6 +45,7 @@ public class WebElementUIHelperUtil
 		JavascriptExecutor js = (JavascriptExecutor)driver;
 		js.executeScript("window.scroll(0,600)");
 		element.sendKeys(input);
+		ExtentManager.getTest().log(Status.INFO, "Scroll and enter text"+input+"into web element"+element);
 	}
 	
 	public void scrollAndClick(WebElement element)
@@ -50,6 +53,7 @@ public class WebElementUIHelperUtil
 		JavascriptExecutor js = (JavascriptExecutor)driver;
 		js.executeScript("window.scroll(0,600)");
 		element.click();
+		ExtentManager.getTest().log(Status.INFO, "Scroll and then click on "+element);
 		
 	}
 	

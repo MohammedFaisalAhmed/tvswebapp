@@ -19,6 +19,16 @@ public void user_navigates_to_login_page()
 public void user_enters_valid_and_valid(String mobileNumber, String OTP) 
 {
    loginPageActions.enterMobileNumberAndOtp(mobileNumber, OTP);
+   
+  
+}
+
+
+@Then("User enters valid {string} details")
+public void user_enters_valid_details(String userName)
+{
+   loginPageActions.enterUserDetails(userName);
+
 }
 
 @Then("click on Submit button")
