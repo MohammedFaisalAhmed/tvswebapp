@@ -56,6 +56,12 @@ public class WebElementUIHelperUtil
 		ExtentManager.getTest().log(Status.INFO, "Scroll and then click on "+element);
 		
 	}
+
+	public void selectValueFromDropDown(){
+
+	}
+
+
 	
 	
 
