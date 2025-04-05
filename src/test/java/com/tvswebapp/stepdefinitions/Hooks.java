@@ -51,11 +51,8 @@ public class Hooks
 		ExtentManager.getTest().log(Status.PASS, "Test-Case Pass"+scenario.getName()); 
 		 
 	 }
-	 
-	 if(driver!=null)
-	 {
-		 driver.quit();
-	 }
+	 DriverFactoryUtil.closeDriver();
+
 	 
 	 ExtentManager.flushReport();
 	 

@@ -88,9 +88,7 @@
       
       <configuration>
           <systemPropertyVariables>
-              <!--suppress UnresolvedMavenProperty -->
               <env>${env}</env>
-              <!--suppress UnresolvedMavenProperty -->
               <browser>${browser}</browser>
           </systemPropertyVariables>
           <suiteXmlFiles>
