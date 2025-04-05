@@ -87,12 +87,16 @@
       </configuration>-->
       
       <configuration>
-      <SuitesXmlFiles>
-      <SuiteXmlFile> testng.xml
-      </SuiteXmlFile>
-      
-      </SuitesXmlFiles>
-      
+          <systemPropertyVariables>
+              <!--suppress UnresolvedMavenProperty -->
+              <env>${env}</env>
+              <!--suppress UnresolvedMavenProperty -->
+              <browser>${browser}</browser>
+          </systemPropertyVariables>
+          <suiteXmlFiles>
+      <suiteXmlFile>testng.xml</suiteXmlFile>
+      </suiteXmlFiles>
+
       </configuration>
       
       
