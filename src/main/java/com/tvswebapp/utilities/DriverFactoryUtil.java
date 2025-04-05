@@ -40,4 +40,14 @@ public class DriverFactoryUtil
 	}
 	return driver.get();
 }
+	
+	public static void closeDriver()
+	{
+		if(driver.get()!=null) //browser is open
+		{
+			driver.get().quit();
+			
+		}
+		
+	}
 }

@@ -10,7 +10,8 @@ import io.cucumber.testng.CucumberOptions;
 	features="src/test/resources/features/login.feature",
 	glue= {"com.tvswebapp.stepdefinitions"},
 	tags= "@UsersLoginAndSubmit",
-	plugin={"pretty","html:target/cucumber-reports.html"},
+	plugin={"pretty","html:target/cucumber-reports.html","json:target/cucumber.json"},
+	
 	monochrome=true	
 		
 )

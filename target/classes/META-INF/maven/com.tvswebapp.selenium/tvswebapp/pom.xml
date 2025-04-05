@@ -87,12 +87,14 @@
       </configuration>-->
       
       <configuration>
-      <SuitesXmlFiles>
-      <SuiteXmlFile> testng.xml
-      </SuiteXmlFile>
-      
-      </SuitesXmlFiles>
-      
+          <systemPropertyVariables>
+              <env>${env}</env>
+              <browser>${browser}</browser>
+          </systemPropertyVariables>
+          <suiteXmlFiles>
+      <suiteXmlFile>testng.xml</suiteXmlFile>
+      </suiteXmlFiles>
+
       </configuration>
       
       
