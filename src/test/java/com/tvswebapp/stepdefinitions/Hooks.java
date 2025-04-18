@@ -41,7 +41,7 @@ public class Hooks
 	 if(scenario.isFailed())
 	 {
 		 byte[] screenshot = ((TakesScreenshot)driver).getScreenshotAs(OutputType.BYTES);
-		 scenario.attach(screenshot, "image/jpeg", "faile-screenshot");
+		 scenario.attach(screenshot, "image/jpeg", "failed-screenshot");
 		 ExtentManager.getTest().log(Status.FAIL, "Test-Case Failed"+scenario.getName());
 		 ExtentManager.getTest().addScreenCaptureFromBase64String(((TakesScreenshot)driver).getScreenshotAs(OutputType.BASE64));
 		 
